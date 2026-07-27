@@ -1,24 +1,65 @@
 aid: general-radar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/general-radar.png
 name: General Radar
-description: 'General Radar is a company surfaced as a portfolio company of kleiner-perkins and added
-  to the API Evangelist network as a stub for enrichment. Sector: hardtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'General Radar Corp. (GenRad) is a Belmont, California hardtech company founded in 2016 that
+  designs and manufactures fully solid-state, high-resolution active electronically scanned array (AESA)
+  phased-array radar systems built largely on commercial off-the-shelf hardware. Its products include the
+  C-band GenRad GFC multi-mission AESA radar with a GaN front-end and digital beam-forming, and the Mark-IV
+  76-81GHz millimeter-wave 3D imaging radar producing LIDAR-like point clouds. The company serves aerospace
+  and defense (U.S. Air Force, Navy, NORAD), counter-drone, airfield foreign-object-debris (FOD) detection,
+  autonomy, wind energy, and weather markets, and has raised over $35M from investors including Kleiner Perkins
+  and Octave Ventures. General Radar publishes no public API, developer portal, SDK, or machine-readable
+  interface; this profile is maintained for API Evangelist network completeness.'
 url: https://raw.githubusercontent.com/api-evangelist/general-radar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - kleiner-perkins
+- octave-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: hardware-company-no-api-surface
+x-founded: '2016'
+x-headquarters: Belmont, California, USA
+x-ceo: Dmitry Turbiner
+x-enrichment-checked: '2026-07-19'
+x-enrichment-result: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Hardtech
+- Radar
+- Aerospace
+- Defense
+- Sensors
+- Phased Array
+- AESA
+- Autonomy
+common:
+- type: Website
+  url: https://www.genrad.com/
+- type: Careers
+  url: https://www.genrad.com/careers
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
